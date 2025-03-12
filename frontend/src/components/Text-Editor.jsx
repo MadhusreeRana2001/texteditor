@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps, no-unused-vars */
+
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { saveAs } from "file-saver";
