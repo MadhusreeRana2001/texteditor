@@ -11,12 +11,12 @@ const Landing = () => {
   return (
     <>
       <div className='md:flex'>
-        <img src={landing} alt="notepad" className='w-screen h-[27vh] object-cover md:w-[70vw] md:h-[100vh]' />
+        <img src={landing} alt="notepad" className='w-screen h-[27vh] object-cover md:w-[60vw] md:h-[100vh]' />
 
         <div>
-          <div className="font-bold text-2xl pt-10 pb-6 md:py-12 md:px-[15vw] text-center">
+          <div className="font-bold text-2xl pt-10 pb-6 md:pt-24 md:pb-16 md:px-[15vw] text-center">
             Welcome to
-            <div className='playwrite text-green-600 text-4xl'>texteditor</div>
+            <div className='playwrite text-green-600 text-4xl'>easytexteditor</div>
           </div>
 
           <div className='px-10 md:px-14'>
