@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { saveAs } from "file-saver";
 import { Document, Packer, Paragraph } from "docx";
+import Background from "../assets/Background.png";
 
 
 const TextEditor = () => {
@@ -50,7 +51,7 @@ const TextEditor = () => {
     return (
         <>
             <div className="relative">
-                <img src="https://images.unsplash.com/photo-1558617856-8648bd837f97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background" className="h-screen md:w-screen object-cover" />
+                <img src={Background} alt="Background" className="h-screen md:w-screen object-cover" />
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center text-white text-xl bg-black bg-opacity-50 p-16 text-center">
                     <div className="font-bold mt-8">
                         What's on your mind, <span className="text-green-400">{user.name}</span> ?
