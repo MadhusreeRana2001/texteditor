@@ -31,21 +31,17 @@ router.get("/google/callback",
       if (req.query.state === "login") {
         req.login(req.user, (err) => {
           if (err) return res.redirect(process.env.FRONTEND_URL);
-          return res.redirect(`${process.env.FRONTEND_URL}/text-editor`);
+          return res.redirect(process.env.FRONTEND_URL
+            + `/text-editor`);
         });
       }
       else {
-        return res.redirect(`${process.env.FRONTEND_URL}/text-editor`);
+        return res.redirect(process.env.FRONTEND_URL
+          + `/text-editor`);
       }
     }
   }
 );
-
-router.get("/logout", (req, res) => {
-  req.logout(() => {
-    res.redirect(process.env.FRONTEND_URL);
-  });
-});
 
 router.get("/user", (req, res) => {
   if (req.user) {
